@@ -4,5 +4,5 @@ The following steps show how to use JMeter and New Relic for performance testing
 
 ## Prerequisites
 
-Download the latest release of * [Apache JMeter](http://jmeter.apache.org/).
-Access to * [New Relic](https://newrelic.com/).
+Download the latest release of [Apache JMeter](http://jmeter.apache.org/).
+Access to [New Relic](https://newrelic.com/).
