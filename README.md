@@ -20,7 +20,7 @@ Download and install the latest release of [Apache JMeter](http://jmeter.apache.
 	⋅⋅* HTTP Proxy = localhost
 	⋅⋅* Port = 8888
 	⋅⋅* Use this proxy server for all protocols = checked
-
+	
 6. Start WorkBench > HTTP(S) Test Script Recorder. In FireFox browser refresh the URL to test.
 
 7. After running the initial test for recording,
