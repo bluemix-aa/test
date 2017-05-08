@@ -8,35 +8,35 @@ Download and install the latest release of [Apache JMeter](http://jmeter.apache.
 
 ### Create a New Test in JMeter
 
-1. Open JMeter > Templates > Create
+1. Open JMeter > Templates > Create.
 
-2. Thread Group > # of Threads = 3 > Loop Count = 2
+2. Thread Group > # of Threads = 3 > Loop Count = 2.
 
-3. Thread Goup > Recording Controller > Add > Listener > View Results in Table
+3. Thread Goup > Recording Controller > Add > Listener > View Results in Table.
 
 4. HTTP Request Defaults > Server Name = aa-dynamic-reaccom-ui-dev.mybluemix.net
 
 5. Make sure FireFox > Options > Network > Settings > Manual proxy configuration 
-	a. HTTP Proxy = localhost
-	b. Port = 8888
-	c. Use this proxy server for all protocols = checked
+	⋅⋅* HTTP Proxy = localhost
+	⋅⋅* Port = 8888
+	⋅⋅* Use this proxy server for all protocols = checked
 
-6. Start WorkBench > HTTP(S) Test Script Recorder. In FireFox browser refresh URL to test.
+6. Start WorkBench > HTTP(S) Test Script Recorder. In FireFox browser refresh the URL to test.
 
 7. After running the initial test for recording,
  
    Rename: 
-	a. Main | Transaction Controller - "4 / - Main Dynamic Reaccom Transaction"
-	b. Main | HTTP Request - "4 / - Main Dynamic Reaccom Request"
-	c. Reservation | Transaction Controller - "27 /reservations/NPUNJW - AJAX Transaction"
+	⋅⋅* Main | Transaction Controller - "4 / - Main Dynamic Reaccom Transaction"
+	⋅⋅* Main | HTTP Request - "4 / - Main Dynamic Reaccom Request"
+	⋅⋅* Reservation | Transaction Controller - "27 /reservations/NPUNJW - AJAX Transaction"
 
    Remove: 
-	a. "success.txt" from the test.
-	b. "save browsing..." from the test.
-	c. (And others as you see fit.)
+	⋅⋅* "success.txt" from the test.
+	⋅⋅* "save browsing..." from the test.
+	⋅⋅* (And others as you see fit.)
 
 8. After running the initial test and updating the script, reset browser network settings
-	a. FireFox > Options > Network > Settings > Use system proxy settings
+	⋅⋅* FireFox > Options > Network > Settings > Use system proxy settings
 
 9. Stop WorkBench > HTTP(S) Test Script Recorder, if still running before running a test.
 
@@ -50,7 +50,7 @@ Download and install the latest release of [Apache JMeter](http://jmeter.apache.
 
 ### Transaction Details Using New Relic
 
-13. Login to New Relic (https://rpm.newrelic.com/) and go to "Service Maps" section.
+13. Login to [New Relic](https://rpm.newrelic.com/) and go to "Service Maps" section.
 
 14. Identify the "aa-reservation-service-dev" microservice, click on white space top view 4 metrics (response time, Apdex, Throughput, and Error rate).  Note the Response time (i.e. 2.29k ms).
 
